@@ -1,0 +1,1001 @@
+@font-face {
+    font-family: attila;
+    src: url(../assets/fonts/attila.ttf);
+}
+@font-face {
+    font-family: dancing script;
+    src: url(../assets/fonts/DancingScript-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: havelock;
+    src: url(../assets/fonts/havelock.ttf);
+}
+@font-face {
+    font-family: montserrat;
+    src: url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    position: relative;
+    background-color: #232025;
+    overflow: hidden;
+    color: #d1d1d1;
+
+}
+ 
+#full_screen_nav {
+    height: 100vh;
+    width: 100vw;
+    background-color: #CECECE;
+    color: #2B2B2B;
+    font-family: "attila";
+    position: absolute;
+    padding: 12vh 10vh;
+    top: -100vh;
+    transition: all ease .8s;
+    z-index: 999;
+
+}
+
+#full_screen_nav h1 {
+    font-size: 14vw;
+    text-transform: uppercase;
+    letter-spacing: -17px;
+    font-weight: 600;
+}
+
+#full_screen_nav .menu_list {
+    width: 35%;
+    display: flex;
+    padding-left: 2vh;
+    text-transform: capitalize;
+    justify-content: space-between;
+    font-size: 1.2vw;
+    line-height: 2.8vw;
+    font-family: "montserrat"; 
+    margin-top: 4vh;
+}
+#full_screen_nav .menu_list h2 {
+    font-weight: 100;
+
+}
+#menubtn {
+    transition: transform 0.5s ease;
+  }
+  
+  #menubtn.rotate {
+    transform: rotate(90deg);
+  }
+  
+#nav {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 12vh;
+    position: fixed;
+    top: 0%;
+    transition: all ease .8s;
+    z-index: 999;
+    font-family: "attila";
+
+}
+
+#nav h2 {
+    font-size: 2.8vh;
+    color: #d1d1d1d5;
+    text-transform: uppercase;
+    transition: all ease .8s;
+    letter-spacing: 5px;
+}
+
+#nav .nav_part2 {
+    font-size: 2.5vh;
+    text-transform: uppercase;
+
+}
+
+#nav .nav_part2 ul {
+    display: flex;
+    align-items: center;
+    gap: 2.7vw;
+}
+
+#nav .nav_part2 ul li {
+    list-style: none;
+    letter-spacing: 3px;
+
+}
+
+#nav .nav_part2 ul li p {
+    font-size: 1.9vw;
+    transition: all ease .8s;
+}
+
+#nav .nav_part2 ul li a {
+    text-decoration: none;
+    color: #dadadad6;
+    transition: all ease .8s;
+    font-weight: 100;
+}
+
+#home_page {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    font-family: "attila";
+
+}
+
+#home_page h1 {
+    font-size: 13vw;
+    position: absolute;
+    text-transform: uppercase;
+    top: 20%;
+    left: 5%;
+    letter-spacing: 1vw;
+}
+
+#home_page h2 {
+    font-size: 3vw;
+    line-height: 2.8vw;
+    width: 32%;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    color: #ADADAD;
+}
+
+#home_page p {
+    font-size: 0.9vw;
+    line-height: 1vw;
+    width: 10%;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: "attila";
+    top: 58%;
+    right: 18%;
+    color: #ADADAD;
+}
+
+/* End of home page */
+
+#banner {
+    height:90vh;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    margin-top: 90vh;
+}
+
+#banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* End of Banner */
+
+
+
+#text_content {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#text_content h2 {
+    font-size: 3.6vw;
+    width: 70%;
+    text-align: center;
+    font-family: "attila";
+    line-height: 4.3vw;
+    transform-origin: 100% 100%;
+}
+
+#text_content h2 span {
+    font-family: "dancing script";
+}
+
+/* End of text content */
+
+#filler{
+    width: 85%;
+    margin: auto;
+    height: 2px ;
+    position: relative;
+    margin-top: 8vh;
+}
+#line-filler {
+    position: absolute;
+    background-color: #eff1f4;
+    width: 40%;
+    height: 100%;
+}
+
+
+
+/* end of line #filler */
+
+
+
+#text_card_animation {
+    height: 110vh;
+    width: 100%;
+    position: relative;
+    font-family: "havelock";
+}
+
+
+
+#text_card_animation .main_enime {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    padding-top: 5vh;
+}
+
+#text_card_animation .main_enime .row {
+    margin-top: 2vh;
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-family: "havelock";
+
+}
+#text_card_animation .main_enime .row:hover #arrow {
+    opacity: 1;
+    font-family: "havelock";
+}
+#text_card_animation .main_enime .row .right h1{
+    transition: all ease 0.5s;
+
+}
+#text_card_animation .main_enime .row:hover h1{
+    -webkit-text-stroke: 2px #adadad;
+    color: transparent;
+}
+#text_card_animation .main_enime .row .left {
+    margin-top: 2vh;
+    height: 100%;
+    width: fit-content;
+    font-size: 1vw;
+}
+
+#text_card_animation .main_enime .row .right {
+    height: 100%;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-left: 10vw;
+    font-size: 2.5vw;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    position: relative;
+
+
+}
+
+#text_card_animation .main_enime .row .right h1 {
+    z-index: 999;
+    font-family: "havelock";
+}
+
+#text_card_animation .card {
+    height: 18vw;
+    width: 14vw;
+    border-radius: 20px;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 4vh 2.5vh;
+    align-items: start;
+    justify-content: space-between;
+    color: #232025;
+
+}
+
+.card h5 {
+    font-size: 2.7vw;
+    font-family: "havelock";
+}
+
+.card p {
+    font-size: 1.2vw;
+    font-family: "havelock";
+}
+
+#card1{
+    background-color: rgb(69, 175, 210);
+}
+
+
+#arrow{
+    opacity: 0;
+    font-size: 6vw;
+    font-weight: 900;
+    width: fit-content;
+    height: fit-content;
+    right: 0;
+    position: absolute;
+    transition: opacity ease 0.5s;
+}
+
+/* end of text_card_animation */
+
+
+#text_content2 {
+    height: 70vh;
+    width: 100%;
+    padding: 5vh 10vh;
+}
+
+#text_content2 h2 {
+    font-size: 8vw;
+    line-height: 8vw;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    font-family: "attila";
+    opacity: 1;
+}
+
+/* End of text content2 */
+#text_content3 {
+    height: 30vh;
+    width: 100%;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    text-transform: uppercase;
+    display: flex;
+}
+
+#text_content3 .part1 {
+    width: 65%;
+    height: 100%;
+    border-right: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+
+#text_content3 .part1 h2 {
+    font-size: 4vw;
+    padding: 0 6vw;
+    line-height: 4vw;
+    font-weight: 500;
+    font-family: "attila";
+
+}
+
+#text_content3 .part2 {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#text_content3 .part2 h2 {
+    font-size: 1.4vw;
+    padding: 0 6vw;
+    line-height: 2.3vw;
+    font-weight: 500;
+    font-family: "attila";
+
+}
+
+/* End of text content 3 */
+
+#text_content4 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    background-color: rebeccapurple;
+    font-family: "attila";
+}
+
+#text_content4 h2 {
+    font-size: 4vw;
+    width: 80%;
+    margin: auto;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 3vw;
+    z-index: 5;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text_content4 .banner2 {
+
+    width: 100%;
+    height: 100%;
+}
+
+#text_content4 span {
+    font-size: 5vw;
+    font-family: "dancing script";
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+#text_content4 p {
+    font-size: 1.1vw;
+    line-height: 1.1vw;
+   font-family: "attila";
+    font-weight: 100;
+    width: 26%;
+    margin: auto;
+    padding: 5vh 7vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text_content4 .smile {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+
+/* End of text content 4 */
+
+
+#text_animation {
+    height: 100%;
+    width: 100%;
+}
+
+#text_animation .slid1_h1 {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#text_animation .slid1_h1::-webkit-scrollbar {
+    display: none;
+}
+
+
+#text_animation .slid2_h1 {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#text_animation .slid2_h1::-webkit-scrollbar {
+    display: none;
+}
+
+#text_animation h1 {
+    text-transform: uppercase;
+    font-size: 11.5vw;
+    line-height: 10vw;
+    font-family: "attila";
+}
+
+#text_animation .one2 {
+    color: transparent;
+    -webkit-text-stroke: 1px #adadad;
+}
+
+#text_animation .slid1_h1 h1 {
+    transform: translateX(-100%);
+}
+
+
+
+
+/* End of text animation */
+
+#text_animation2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#text_animation2 h2 {
+    font-size: 3vw;
+    line-height: 3.5vw;
+    top: 15%;
+    font-family: "attila";
+    width: 40%;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#text_animation2 h2 span {
+    font-family: "dancing script";
+    font-size: 4vw;
+}
+
+
+#text_animation2 #elements {
+    height: 50vh;
+    position: relative;
+    top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#elements .element1 {
+    height: 100%;
+    width: 25%;
+    position: relative;
+    cursor: none;
+}
+
+#elements .element2 {
+    height: 100%;
+    width: 25%;
+    position: relative;
+    cursor: none;
+}
+
+#elements .element1 h1 {
+    font-size: 3vw;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    font-family: "attila";
+}
+
+#elements .element2 h1 {
+    font-size: 3vw;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    font-family: "attila";
+}
+
+#elements .element1 img {
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity ease-in 0.1s;
+
+}
+
+#elements .element2 img {
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity ease-in 0.1s;
+}
+
+
+
+/* end of Text_animation2 */
+
+
+
+
+#text_animation_btm{
+    height: 100vh;
+    position: relative;
+    padding: 10vw 5vw;
+}
+#text_animation_btm h2{
+    font-size: 4.5vw;
+    font-family: "attila";
+    text-align: center;
+    margin-bottom: 5vh;
+}
+#text_animation_btm #boxs{
+    height: 100%;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#text_animation_btm #boxs{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+#text_animation_btm #boxs img{
+    filter: (5px 5px 15px);
+   transition: all ease-in 0.5s;
+
+}
+#text_animation_btm #boxs img:hover{
+   scale: 1.1;
+   transform: rotate(10deg);
+}
+
+/* End of text_animation_btm */
+
+#footer{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2vh;
+}
+
+/* End of footer */
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    #main {
+        position: relative;    
+    }
+     
+    #full_screen_nav {
+        padding: 14vh 3vh;
+    }
+    
+    #full_screen_nav h1 {
+        font-size: 20vw;
+        letter-spacing: -5px;
+    }
+    
+    #full_screen_nav .menu_list {
+        width: fit-content;
+        flex-direction: column;
+        padding-left: 1vh;
+        gap: 4vh;
+        font-size: 6vw;
+        line-height: 6vw;
+        margin-top: 4vh;
+    }
+    #full_screen_nav .menu_list h2 {
+        font-weight: 400;
+        margin-top: 2vh;
+    }
+
+    #nav {
+        height: 10vh;
+        align-items: initial;
+        justify-content: space-between;
+        padding: 3vh;
+    }
+    
+    #nav h2 {
+        font-size: 4.1vh;
+    }
+    #nav .nav_part2 ul li p i{
+        font-size: 4.2vh;        
+    }
+    #nav .nav_part2 ul li a {
+            display: none;
+    }
+
+
+    /* end of responsive navbar */
+
+    
+    #home_page {
+        height: 70vh;
+    }
+    #home_page h1 {
+        font-size: 30vw;
+        top: 30%;
+        left: 5%;
+    }
+
+    #home_page h2 {
+        font-size: 6vw;
+        line-height:6vw;
+       width: 48%;
+        top: 60%;
+        left: 10%;
+}
+
+    #home_page p {
+        font-size: 3vw;
+        line-height: 4vw;
+        width: 30%;
+        top: 80%;
+        right: 10%;
+        color: #ADADAD;
+    }
+
+/* End of home page */
+
+
+    #banner {
+        height:60vh;
+        width: 85%;
+        margin-top: 75vh;
+    }
+/* End of Banner */
+
+
+
+
+#text_content {
+    margin-top: 5vh;
+    height: 50vh;
+}
+
+#text_content h2 {
+    font-size: 7.7vw;
+    width: 90%;
+    line-height: 8.8vw;
+}
+
+/* End of text content */
+
+
+
+
+#text_card_animation {
+    height: 70vh;
+    /* border: 2px solid red;~ */
+
+}
+
+
+
+#text_card_animation .main_enime {
+    padding-top: 3vh;
+}
+
+#text_card_animation .main_enime .row {
+    margin-top: 0vh;
+    height: 12vh;
+
+}
+#text_card_animation .main_enime .row .right h1{
+    font-size: 4vh;
+
+}
+#text_card_animation .main_enime .row .left {
+    margin-top: 4vh;
+    font-size: 3vw;
+}
+
+#text_card_animation .main_enime .row .right {
+    height: 100%;
+    width: 70%;
+    padding-left: 4vw;
+    letter-spacing: -3px;
+}
+
+#text_card_animation .card {
+    display: none;
+}
+
+
+
+#arrow{
+    font-size: 5vh;
+    margin-top: 3vh;
+}
+
+/* end of text_card_animation */
+
+#text_content2 {
+    height: 55vh;
+    padding: 10vh 4vh;
+}
+
+#text_content2 h2 {
+    font-size: 15vw;
+    line-height: 16vw;
+}
+
+/* End of text content2 */
+
+
+
+#text_content3 {
+    width: 100%;
+    height: 25vh;
+    flex-direction: column;
+}
+
+#text_content3 .part1 {
+    border-right: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+}
+
+#text_content3 .part1 h2 {
+    font-size: 6vw;
+    line-height: 6vw;
+    margin-left: 2vh;
+    letter-spacing: 2px;
+
+}
+
+#text_content3 .part2{
+    width: 50%;
+    height: 70%;
+}
+#text_content3 .part2 h2 {
+    font-size: 2.5vw;
+    margin-left: 2vh;
+    line-height: 2.5vw;
+    letter-spacing: 2px;
+
+
+}
+
+/* End of text content 3 */
+
+#text_content4 {
+    height: 70vh;
+    position: relative;
+}
+
+#text_content4 h2 {
+    font-size: 4.3vh;
+    line-height: 3.8vh;
+}
+
+
+#text_content4 span {
+    font-size: 4.2vh;
+}
+
+#text_content4 p {
+    font-size: 1.4vh;
+    line-height: 2vh;
+    width: 90%;
+    text-align: center;
+    letter-spacing: 2px;
+    position: absolute;
+    
+}
+
+#text_content4 .smile {
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+}
+
+/* End of text content 4 */
+
+
+
+#text_animation {
+    height: 60vh;
+    width: 100%;
+    padding-top: 5vh;
+}
+
+#text_animation h1 {
+    text-transform: uppercase;
+    font-size: 9vh;
+    line-height: 8vh;
+}
+
+
+/* End of text animation */
+
+#text_animation2 {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+#text_animation2 h2 {
+    font-size: 3.3vh;
+    line-height: 3.4vh;
+    width: 57%; 
+}
+
+#text_animation2 h2 span {
+    font-size: 3vh;
+}
+
+
+#text_animation2 #elements {
+    height: 20vh;
+
+}
+
+#elements .element1 h1 {
+    font-size: 2vh;
+}
+
+#elements .element2 h1 {
+    font-size: 2vh;
+}
+
+
+
+/* end of Text_animation2 */
+
+
+
+
+#text_animation_btm{
+    height: 45vh;
+    position: relative;
+    padding: 10vw 5vw;
+}
+#text_animation_btm h2{
+    font-size: 4vh;
+    margin-bottom: 5vh;
+}
+#text_animation_btm #boxs{
+    height: 50%;
+    width: 100%;
+}
+
+/* End of text_animation_btm */
+
+#footer{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    font-size: 2.7vw;
+}
+
+/* End of footer */
+
+
+
+
+}
